@@ -1,5 +1,6 @@
 # language:pt
 
+@Desejos
 Funcionalidade: Lista de Desejos
 
 Cenario:Adicionar produtos a lista de desejos "Add to Wishilist" e visualizá-los
@@ -13,8 +14,6 @@ Cenario:Adicionar produtos a lista de desejos "Add to Wishilist" e visualizá-lo
     E Clicar no link "My wishlist"
     Entao Será adicionado produtos a sua lista de desejos
 
-
-Funcionalidade: Lista de Desejos
 Cenario:Enviar lista de desejos sem e-mail obrigatório preenchido "send this wishlist"
     Dado que o usuario tenha adicionado produtos a lista de desejos
     Quando Clicar no botão "Send this wishlist"
@@ -22,8 +21,6 @@ Cenario:Enviar lista de desejos sem e-mail obrigatório preenchido "send this wi
     E  Clicar no botão "Send"
     Então Será retornado um erro informando que a lista não foi enviada.
 
-
-Funcionalidade: Lista de Desejos
 Cenario: Consultar link "Permalink" da "MY WISHLISTS"
     Dado que o usuario tenha adicionado produtos a lista de desejos
     Quando Copiar url "http://automationpractice.com/index.php?token=869C1A24881DB882&fc=module&module=blockwishlist&controller=view" e executar no navegador

@@ -1,0 +1,32 @@
+#pagina de compra
+
+class Comprarpage < SitePrism::Page
+  set_url 'http://automationpractice.com/index.php'
+  element :women, :xpath, '//*[@id="block_top_menu"]/ul/li[1]'
+  element :t_shirts, :xpath, '//*[@id="block_top_menu"]/ul/li[1]/ul/li[1]/ul/li[1]/a'
+  element :cor, :xpath, '//*[@id="color_2"]'
+  element :produto1, :xpath, '//*[@id="center_column"]/ul/li/div'
+  element :adicionarbtn, :xpath, '//*[@id="center_column"]/ul/li/div/div[2]/div[2]/a[1]'
+  element :continue, :xpath, '//*[@id="layer_cart"]/div[1]/div[2]/div[4]/a'
+  element :continuebtn2, :xpath, '//*[@id="center_column"]/p[2]/a[1]'
+  element :email, :xpath, '//*[@id="email_create"]'
+  element :create, :xpath, '//*[@id="SubmitCreate"]'
+  element :mf, :id, 'id_gender1'
+  element :first, :xpath, '//*[@id="customer_firstname"]'
+  element :last, :xpath, '//*[@id="customer_lastname"]'
+  element :pass, :xpath, '//*[@id="passwd"]'
+  element :end1, :xpath, '//*[@id="firstname"]'
+  element :end2, :xpath, '//*[@id="lastname"]'
+  element :company, :xpath, '//*[@id="company"]'
+  element :andress1, :xpath, '//*[@id="address1"]'
+  element :andress2, :xpath, '//*[@id="address2"]'
+  element :city, :xpath, '//*[@id="city"]'
+  element :post, :xpath, '//*[@id="postcode"]'
+  element :phone, :xpath, '//*[@id="phone"]'
+  element :phone2, :xpath, '//*[@id="phone_mobile"]'
+  element :submit, :xpath, '//*[@id="submitAccount"]'
+  element :continuebtn3, :xpath, '//*[@id="center_column"]/form/p/button'
+  element :checkout, :xpath, '//*[@id="form"]/div/p[2]/label'
+  element :continuebtn4, :xpath, '//*[@id="form"]/p/button'
+
+end

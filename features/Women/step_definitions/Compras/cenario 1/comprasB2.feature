@@ -3,39 +3,26 @@
 @Compras
 Funcionalidade: Compras
 
-@carro
-Cenario: Comprar uma T-shirts com um novo usuário
+  Contexto: Está na Home
     Dado que eu esteja na Home
-    Quando Posicionar o mouse em cima de Women
-    E Clicar em T-shirts
-    E Filtrar por menor preço price: Lowest First
-    E Selecionar color blue
-    E Selecionar "Quantity": 1 e Size : s e clicar em Add to cart
-    E Clicar em Proceed to checkout
-    E Clicar em proceed to checkout
-    E Clicar em proceed to checkout novamente
-    E Inserir um Email válido no campo Email address
-    E Preencher os dados de YOUR PERSONAL INFORMATION e YOUR ADDRESS
-    E Clicar em Proceed to checkout
-    E Clicar no Ckeck box Terms of service e botão Proceed to checkout
-    E Clicar no Pay by ckeck
-    E clicar em  I Confirm my order
-    Entao Será criado um novo usuario e finalizada a compra
+    
+    
+    @compra1
+    Cenario: Comprar uma T-shirts com um novo usuário
+      Quando Posicionar o mouse em cima de Women
+      E Clicar em T-shirts
+      #E Filtrar por menor preço price: Lowest First
+      E Selecionar color blue
+      E Clicar em Proceed to checkout A
+      E Clicar em proceed to checkout B
+      E Inserir um Email válido no campo Email address
+      E Preencher os dados de YOUR PERSONAL INFORMATION e YOUR ADDRESS
+      E Clicar no Ckeck box Terms of service e botão Proceed to checkout
+      E Clicar no Pay by ckeck
+      E clicar em  I Confirm my order
+      Entao Será criado um novo usuario e finalizada a compra
 
-Cenario: Comprar produtos da sessão "TOPS" e não marcar o ckeckbox para aceite dos termos de serviço
-    Dado que eu esteja na Home
-    Quando Posicionar o mouse em cima de Women
-    E Clicar em TOPS
-    E Escolher o primeiro produto Faded Short Sleeve T-shirts, posicionar o mouse em cima da imagem e clicar em Add to cart
-    E Clicar em Continue shopping
-    E  Escolher o segundo produto Blouse, posicionar o mouse em cima da imagem e clicar em Add to cart
-    E Clicar em proceed to checkout
-    E Clicar em proceed to checkout
-    E Clicar em proceed to checkout
-    E Clicar em proceed to checkout
-    E Clicar no x
-    Então aparecerá uma mensagem informando que não é possivel finalizar a compra sem aceitar os termos
-
+@cachorro
 Cenario: Comprar todos os produtos da sessão "TOPS" com um usuário já cadastrado
     Dado que eu esteja na Home
     Quando Posicionar o mouse em cima de Women
